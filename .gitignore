@@ -1,0 +1,10 @@
+# Tesseract large binaries — download via setup.sh
+tesseract/*.traineddata
+tesseract/*.wasm
+tesseract/tesseract-core*.wasm.js
+
+# Backups
+tesseract/*.backup
+
+# macOS
+.DS_Store

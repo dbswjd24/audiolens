@@ -1,30 +1,34 @@
-# Audiolens
+# 🎵 Audiolens
 
-A Chrome extension that detects tracklists from YouTube videos and adds them to your Spotify playlist in one click.
+> turn YouTube tracklists into Spotify playlists in one click
 
-## Features
+You know when a DJ mix or playlist video has the full tracklist in the description and you want to save all the songs? Audiolens does that automatically — no more manually searching each track on Spotify.
 
-- Reads timestamped tracklists from YouTube video descriptions
-- Falls back to screenshot OCR (Tesseract.js, runs locally) when no description tracklist is found
-- Paste-text input for tracklists from blogs or comments
-- Supports English and Korean, including two-line Korean music app format (Melon, Genie, Bugs, Flo)
-- Add to an existing Spotify playlist or create a new one
-- Secure Spotify login via PKCE OAuth 2.0
+---
 
-## Setup
+## what it does
+
+- **YouTube** — reads timestamped tracklists straight from the video description
+- **Screenshot** — upload an image of a tracklist and it OCRs the tracks locally (no data sent anywhere)
+- **Paste** — copy a tracklist from a blog, comment, or anywhere and paste it in
+- **Korean support** — works with Melon, Genie, Bugs, and Flo screenshots where title and artist are on separate lines
+- **Flexible sync** — add to an existing playlist or create a new one
+- **Swap button** — flip title and artist order per row when the format is ambiguous
+
+---
+
+## setup
 
 1. Clone the repo
-2. Run the setup script to download Tesseract binaries:
+2. Download the Tesseract binaries (one time):
    ```bash
    bash setup.sh
    ```
-3. Go to `chrome://extensions`, enable **Developer mode**, click **Load unpacked**, and select this folder
-4. Add your Spotify app's redirect URI in the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard):
-   - Open the extension background service worker to find your redirect URI (`chrome.identity.getRedirectURL()`)
+3. Go to `chrome://extensions`, enable **Developer mode**, click **Load unpacked**, select this folder
+4. Log in with Spotify when prompted
 
-## Tech stack
+---
 
-- Chrome Extensions Manifest V3
-- Spotify Web API + PKCE OAuth 2.0
-- Tesseract.js v5 (WebAssembly OCR)
-- Vanilla JavaScript / HTML / CSS
+## tech
+
+`Chrome MV3` `Spotify Web API` `PKCE OAuth` `Tesseract.js` `WebAssembly` `Vanilla JS`

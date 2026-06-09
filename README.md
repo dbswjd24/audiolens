@@ -11,7 +11,6 @@ You know when a DJ mix or playlist video has the full tracklist in the descripti
 - **YouTube** reads timestamped tracklists straight from the video description
 - **Screenshot** upload an image of a tracklist and it OCRs the tracks locally (no data sent anywhere)
 - **Paste** copy a tracklist from a blog, comment, or anywhere and paste it in
-- **Korean support** works with Melon, Genie, Bugs, and Flo screenshots
 - **Flexible sync** add to an existing playlist or create a new one
 - **Swap button** flip title and artist order per row when the format is ambiguous
 

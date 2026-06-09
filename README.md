@@ -6,7 +6,7 @@ You know when a DJ mix or playlist video has the full tracklist in the descripti
 
 ---
 
-## what it does
+## What it does
 
 - **YouTube** reads timestamped tracklists straight from the video description
 - **Screenshot** upload an image of a tracklist and it OCRs the tracks locally (no data sent anywhere)
@@ -16,7 +16,7 @@ You know when a DJ mix or playlist video has the full tracklist in the descripti
 
 ---
 
-## setup
+## Setup
 
 1. Clone the repo
 2. Download the Tesseract binaries (one time):

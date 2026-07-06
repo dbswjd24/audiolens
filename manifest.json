@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Audiolens",
+  "name": "AudioLens",
   "version": "1.2.0",
   "permissions": ["storage", "offscreen", "identity"],
   "background": {
